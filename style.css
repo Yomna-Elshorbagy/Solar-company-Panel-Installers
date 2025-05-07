@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* ========== Global ========== */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+:root {
+  --mainColor: #0b9586;
+  --activeNavBg: rgba(0, 0, 0, 0.06);
+  --borderActiveNav: 3px solid rgba(0, 0, 0, 0.3);
+  --secondButtonColor: #ffbb1c;
+  --padding-section: 80px;
+  --paragraphColor: #475467;
+  --textColorGray: #101828;
+  --cardBorder: #3cab90;
+  --cardBg: #3cab900d;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+.btn1,
+.btn2 {
+  padding: 12px 34px;
+  border-radius: 109px;
+  font-size: 0.875rem;
+  margin-right: 10px;
+  display: inline-block;
+}
+.btn1 {
+  background-color: var(--mainColor);
+  color: #fff;
+}
+.btn2 {
+  background-color: var(--secondButtonColor);
+  color: #2a3334;
+}
+
+.title {
+  text-align: center;
+}
+.title p {
+  color: var(--paragraphColor);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 800px;
+  margin-inline: auto;
+  margin-block: 20px;
+}
+
+.arrow-link {
+  display: flex;
+  color: var(--mainColor);
+  margin-top: 10px;
+}
+.arrow-link img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+/* ========== navBar ✅========== */
+nav {
+  background-color: var(--mainColor);
+  color: #fff;
+  padding-block: 16px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .container ul {
+  display: flex;
+  gap: 8px;
+  width: 506x;
+  height: 38px;
+}
+nav .container ul li {
+  padding: 8px 28px;
+}
+nav .container ul li a {
+  padding: 8px 28px;
+}
+nav .nav-links .active {
+  background-color: var(--activeNavBg);
+  border-bottom: var(--borderActiveNav);
+  border-radius: 5px;
+  padding: 8px 28px;
+}
+
+nav .logo img {
+  mix-blend-mode: multiply;
+  width: 147px;
+  height: 44px;
+}
+
+nav label {
+  display: none;
+  cursor: pointer;
+}
+nav label img {
+  width: 25px;
+}
+nav #scroll-menu {
+  display: none;
+}
+
+nav .tell {
+  width: 216px;
+  height: 50px;
+}
+nav .tell p {
+  width: 66px;
+  height: 22px;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.94px;
+  line-height: 100%;
+}
+nav .tell a {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.94px;
+  line-height: 28px;
+}
+
+/* ========== Header ========== */
+header {
+  background: url("./assets/images/solar-panels-meadow 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+header .container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+header .line {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+header .line .progress {
+  height: 5px;
+  width: 200px;
+  background-color: #575757;
+}
+header .progress .line1 {
+  height: 100%;
+  width: 50% !important;
+  background-color: #fff;
+}
+header .solar-content {
+  width: 100%;
+  max-width: 729px;
+}
+header h1 {
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: -2%;
+}
+header p {
+  width: 700px;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0%;
+  margin-block: 30px;
+}
+
+/* ========== About ========== */
+#about {
+  padding-block: var(--padding-section);
+}
+
+#about .container {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+}
+
+#about .container .about-text {
+  width: 594px;
+  height: 476px;
+  gap: 50px;
+}
+
+/* ========== Power ✅ ========== */
+
+#power {
+  background-image: url("assets/images/power.png");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+#power .container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#power .container .power-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+#power .container .power-text .btn2 {
+  align-self: flex-start;
+}
+
+/* ========== kits ✅========== */
+#kits {
+  padding-block: var(--padding-section);
+}
+
+#kits .container .items {
+  display: flex;
+  justify-content: space-between;
+}
+
+#kits .container .items .card {
+  width: calc(100% / 3 - 30px);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#kits .container .items .card .card-text {
+  padding: 20px;
+}
+#kits .container .items .card .card-text .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--textColorGray);
+  margin-block: 10px;
+  display: block;
+}
+#kits .container .items .card .card-text p {
+  color: var(--paragraphColor);
+}
+
+/* ======== Repairs Over Replacement ✅========= */
+#repairs {
+  padding-block: var(--padding-section);
+  background-image: url("assets/images/Repairs Over Replacement.png");
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+#repairs .item {
+  backdrop-filter: blur(24px);
+  background: #00000091;
+  width: 800px;
+  height: 211;
+  border-radius: 12px;
+  padding: 44px;
+  line-height: 140%;
+  margin: auto;
+}
+
+#repairs .item h3 {
+  margin-bottom: 15px;
+}
+#repairs .item p {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* =========== our values ✅============ */
+#values {
+  padding-block: var(--padding-section);
+}
+
+#values .container .items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+#values .container .items .card {
+  width: calc(33.33% - 30px);
+  border: 1px solid var(--cardBorder);
+  background-color: var(--cardBg);
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+#values .container .card img {
+  width: 70px;
+}
+#values .container .card h4 {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  margin-block: 15px;
+}
+#values .container .card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--paragraphColor);
+}
+
+/* ========= Responsive =========== */
+@media (max-width: 1199.98px) {
+  html {
+    font-size: 13px;
+  }
+
+  nav .tell {
+    display: none;
+  }
+
+  nav label {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav .nav-links ul {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: var(--mainColor);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+  nav .nav-links ul li {
+    padding: 12px;
+  }
+
+  nav input#scroll-menu {
+    display: none;
+  }
+
+  header .btn2 {
+    margin-top: 10px;
+  }
+}
