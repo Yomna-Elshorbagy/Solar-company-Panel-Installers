@@ -1,0 +1,39 @@
+/* ========= Responsive =========== */
+@media (max-width: 1199.98px) {
+  html {
+    font-size: 13px;
+  }
+
+  nav .tell {
+    display: none;
+  }
+
+  nav label {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav .nav-links ul {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: var(--mainColor);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+  nav .nav-links ul li {
+    padding: 12px;
+  }
+
+  nav input#scroll-menu {
+    display: none;
+  }
+
+  header .btn2 {
+    margin-top: 10px;
+  }
+}
