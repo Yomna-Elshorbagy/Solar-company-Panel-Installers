@@ -37,3 +37,74 @@
     margin-top: 10px;
   }
 }
+
+@media (max-width: 992px) {
+  header .solar-content {
+    width: 100%;
+  }
+  #kits .container .items .card,
+  #values .container .items .card {
+    width: calc(100% / 2 - 30px);
+  }
+  #innovators .container .right-side .card {
+    width: 100%;
+  }
+  #repairs .item {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 1rem !important;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  #power .container .power-text {
+    width: 100%;
+  }
+  #kits .container .items .card,
+  #values .container .items .card {
+    width: 100%;
+  }
+  #about .container .about-image,
+  #about .container .about-text {
+    width: 100%;
+    padding-right: 0;
+  }
+  #about .container .hint-image {
+    position: static;
+    margin-top: 20px;
+  }
+  #innovators .container .left-side,
+  #innovators .container .right-side,
+  #footer .container .left-side,
+  #footer .container .right-side,
+  footer .links,
+  footer .copy-rights,
+  #opinion .container .opinion-left,
+  #opinion .container .opinion-right {
+    width: 100%;
+  }
+  #opinion .container .opinion-right .body p {
+    font-size: 1rem;
+  }
+  #opinion .container .opinion-left h4 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 0.75rem !important;
+  }
+  #footer .links ul {
+    font-size: 7px;
+  }
+  #opinion .container .opinion-right .body p {
+    font-size: 0.8rem;
+  }
+  #opinion .container .opinion-left h4 {
+    font-size: 1.5rem;
+  }
+}

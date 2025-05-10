@@ -100,7 +100,7 @@ a {
 .arrow-link {
   display: flex;
   color: var(--mainColor);
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .arrow-link img {
   width: 20px;
@@ -111,7 +111,7 @@ a {
 nav {
   background-color: var(--mainColor);
   color: #fff;
-  padding-block: 16px;
+  padding-block: 1rem;
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -128,8 +128,8 @@ nav .container {
 nav .container ul {
   display: flex;
   gap: 8px;
-  width: 506x;
-  height: 38px;
+  width: 31.625rem;
+  height: 2.375rem;
 }
 nav .container ul li {
   padding: 8px 28px;
@@ -146,8 +146,8 @@ nav .nav-links .active {
 
 nav .logo img {
   mix-blend-mode: multiply;
-  width: 147px;
-  height: 44px;
+  width: 9.1875rem;
+  height: 2.75rem;
 }
 
 nav label {
@@ -155,15 +155,15 @@ nav label {
   cursor: pointer;
 }
 nav label img {
-  width: 25px;
+  width: 1.5625rem;
 }
 nav #scroll-menu {
   display: none;
 }
 
 nav .tell {
-  width: 216px;
-  height: 50px;
+  width: 13.5rem;
+  height: 3.125rem;
 }
 nav .tell p {
   width: 66px;
@@ -202,8 +202,8 @@ header .line {
   margin-bottom: 50px;
 }
 header .line .progress {
-  height: 5px;
-  width: 200px;
+  height: 0.3125rem;
+  width: 12.5rem;
   background-color: #575757;
 }
 header .progress .line1 {
@@ -212,23 +212,22 @@ header .progress .line1 {
   background-color: #fff;
 }
 header .solar-content {
-  width: 100%;
-  max-width: 729px;
+  width: 60%;
 }
 header h1 {
-  font-size: 52px;
+  font-size: 3.25rem;
   line-height: 100%;
   letter-spacing: -2%;
 }
 header p {
-  width: 700px;
+  width: 100%;
   font-size: 20px;
   line-height: 1.8;
   letter-spacing: 0%;
   margin-block: 30px;
 }
 
-/* ============= About ============== */
+/* ============= About ✅============== */
 #about {
   padding-block: var(--padding-section);
   position: relative;
@@ -237,6 +236,7 @@ header p {
 #about .container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   row-gap: 30px;
 }
 
@@ -258,7 +258,7 @@ header p {
   color: var(--paragraphColor);
   margin-block: 30px;
 }
-#about .container .about-text ul  {
+#about .container .about-text ul {
   margin-block: 10px;
 }
 #about .container .about-text ul li {
@@ -270,11 +270,13 @@ header p {
 #about .container .about-text ul li span {
   color: var(--listColor);
 }
+#about .container .about-image figure {
+  position: relative;
+}
 
 #about .container .about-image {
   width: 40%;
   height: auto;
-  position: relative;
 }
 
 #about .container .hint-image {
@@ -324,10 +326,12 @@ header p {
 #kits .container .items {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 #kits .container .items .card {
-  width: calc(100% / 3 - 30px);
+  width: calc(100% / 3);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -345,6 +349,78 @@ header p {
   color: var(--paragraphColor);
 }
 
+/* ========== Energy Innovators Section ✅=========== */
+#innovators {
+  padding-block: var(--padding-section);
+  background-color: #ffbb1c0d;
+}
+#innovators .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+#innovators .container .left-side {
+  width: calc(100% / 3 - 30px);
+}
+
+#innovators .container .left-side h2 {
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: var(--textColorGray);
+}
+#innovators .container .left-side p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--paragraphColor);
+  margin-block: 20px;
+}
+#innovators .container .right-side {
+  width: calc(100% * 2 / 3 - 20px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+#innovators .container .right-side .card {
+  width: calc(100% / 2 - 30px);
+  padding: 24px;
+  background: #3cab900d;
+  border: 1px solid var(--cardBorder);
+  border-radius: 12px;
+}
+
+#innovators .container .right-side .card h6 {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--textColorGray);
+  padding-top: 8px;
+}
+#innovators .container .right-side .card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-block: 20px;
+}
+#innovators .container .right-side .card-head {
+  height: 106px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #3cab9026;
+  text-align: center;
+}
+
+#innovators .container .right-side .img {
+  width: 225px;
+  height: 50px;
+  border-radius: 10px;
+  mix-blend-mode: Luminosity;
+  display: block;
+  margin: auto;
+}
 /* ========== Repairs Over Replacement ✅=========== */
 #repairs {
   padding-block: var(--padding-section);
